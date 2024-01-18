@@ -1,113 +1,76 @@
-:root {
-    --primary-bg-color: #181818;
-    --text-color: #585858;
-    --link-color: #d9b871;
+:root{
+    --cor-bg:#0a0a0a;
+    --cor-text-tm-preto:#ffff;
+    --cor-text-tm-branco:#191919;
+    --cor-hover:#eed33b;
 }
-html{
-    scroll-behavior: smooth;
-}
-.sidebar {
+.menu{
     display: flex;
-    position: fixed;
     flex-direction: column;
     justify-content: space-around;
+    position: relative;
+    position: fixed;
+    background-color: var(--cor-bg);
     align-items: center;
+    padding: 5px;
+    gap: 20px;
+    width: 140px;
     height: 100vh;
-    width: 80px;
-    border-radius: 0px 10px 10px 0px;
-    background-color: var(--primary-bg-color);
-    color: var(--text-color);
+    box-shadow: #000000 10px 10px 20px;
+    z-index: 9999;
 }
-.sidebar ul{
+.menu ul{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    gap: 40px;
+
+}
+.menu ul li{
     list-style: none;
 }
-.sidebar ul li a{
-    color: var(--text-color);
-}
-.sidebar ul li{
-
+.menu ul li a{
+    color: var(--cor-text-tm-preto);
+    text-decoration: none;
     transition: ease 0.3s;
-    margin-bottom: 15px;
-    cursor: pointer;
 }
-.sidebar ul li:hover{
-    transform: scale(1.2);
-    transition: ease 0.3s;   
+.menu ul li a:hover{
+    color: var(--cor-hover);
+    transition: ease 0.3s;
+    text-decoration: underline;
 }
-
-.sections li{
-    font-size: 1.6em;
+#gif-container{
+    display: flex;
+    align-items: center;
+}
+#gif-container img{
+    width: 45px;
+}
+#gif-container p{
+   font-size: 1.7em;
+   font-weight: 700;
+   font-style: normal;
+   color: var(--cor-text-tm-preto);
 }
 .redes{
-    font-size: 1.1em;
+    display: flex;
+    gap: 15px;
 }
-.redes a:hover,.sections a:hover{
-    color: var(--link-color);
+.redes a{
+    color: var(--cor-text-tm-preto);
+    font-size: 1.2em;
+    transition: ease 0.3s;
 }
-.sidebar i:hover{
-    text-shadow: black  2px  1px 3px ;
-} 
-.idioma li:hover{
-    text-shadow: black  2px  1px 3px ;
+.lua,.sol{
+    cursor: pointer;
+    font-size: 1.2em;
 }
-
-@media (max-width: 920px){
-    .menu{
-        display: flex;
-        z-index: 9999;
-    }
-    .sidebar {
-        display: flex;
-        flex-direction: row;
-        position: fixed;
-        justify-content: space-around;
-        align-items: center;
-        width:100vw;
-        height: 50px;
-        border-radius: 10px 10px 0px 0px;
-        background-color: var(--primary-bg-color);
-        color: var(--text-color);
-        bottom: 0px;
-    }
-    
-    .sections{
-        display: flex;
-        flex-direction: row;
-        gap: 15px;
-        align-items: center;
-    }
-    .content{
-        position: relative;
-        left: 20px;
-        width: 85vw;
-    }
-    .idioma{
-        display: flex;
-        gap: 10px;
-    }
-    .redes{
-        display: flex;
-        gap: 10px;
-    }
-    .projetos{
-        display: grid;
-        align-items: center;
-        margin: auto;
-        grid-template-columns:0.4fr;
-        gap: 25px;
-    }
-    .pj{
-        width: 60.2vw;
-    } 
-    .pj img {
-        width: 59.9vw;
-      
-    }
-    #section1 h1{
-        font-size: 3em;
-    }
-    .sobre p{
-        margin-top: 15px;
-        font-size: 1.5em;
-    }
+.sol{
+    display: none;
+}
+.redes a:hover,.redes div i:hover{
+    color: var(--cor-hover);
+    transform: scale(1.2);
+    transition: ease 0.3s;
 }
