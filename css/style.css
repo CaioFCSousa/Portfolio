@@ -64,14 +64,13 @@ body{
 #secao2 {
     display: flex;
     flex-direction: column;
-    height: auto;
     margin-right: 20px;
+    justify-content: space-around;
 }
 .tecnologias_utilizo{
     display: flex;
     justify-content: space-around;
     align-items: center;
-    height: 100%;
 }
 .text_h2 {
     margin-top: 30px;
@@ -109,9 +108,7 @@ body{
     .conteiner{
         margin-left: 20px;
     }
-    #secao2{
-        height: 200vh;
-    }
+
     .tecnologias_utilizo{
         flex-direction: column;
         justify-content: normal;
