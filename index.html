@@ -11,71 +11,80 @@
     <script src="https://kit.fontawesome.com/f0a585b64c.js" crossorigin="anonymous"></script>
 </head>
 <body> 
-    <nav class="menu">
-        <span id="gif-container">
-            <img src="img/1f913.gif" alt="caio">
+    <aside class="sidebar">
+        <header class="header-logo">
+            <img class="image-logo" src="img/1f913.gif" alt="caio">
             <p>Caio</p>
-        </span>
-        <ul>
-            <li><a href="#secao1">Home</a></li>
-            <li><a href="#secao2">Tecnologias</a></li>
-            <li><a href="#secao3">Projetos</a></li>
-            <li><a href="#entra_contado">Contate-me</a></li>
-            
-        </ul>
+        </header>
+        <nav class="menu">
+            <ul>
+                <li><a href="#secao1">Home</a></li>
+                <li><a href="#secao2">Tecnologias</a></li>
+                <li><a href="#secao3">Projetos</a></li>
+                <li><a href="#entra_contado">Contate-me</a></li>
+            </ul>
+        </nav>    
         <div class="redes">
             <a href="https://github.com/CaioFCSousa" target="_blank"><i class="fa-brands fa-github"></i></a>
             <a href="https://www.linkedin.com/in/caio-fernando-29ba34287/"  target="_blank"><i class="fa-brands fa-linkedin"></i></a>
-            <div class="lua"><i class="fa-solid fa-moon"></i></div>
-            <div class="sol"><i class="fa-solid fa-sun"></i></i></div>
+
         </div>
-    </nav>
+        <div class="icone_menu">
+            <i class="fa-solid fa-bars"></i>
+        </div>
+    </aside>
+
     <div class="conteiner">
+        <div class="temas">
+            <i class="fa-solid fa-moon lua"></i>
+            <i class="fa-solid fa-sun sol"></i></i>
+        </div>
+       
         <section class="secao" id="secao1">
             <div class="conteine_aprese">
                 <div class="apresentacao">
                     <h2>I'm</h2>
                     <h1>Caio<br>Fernando</h1>
-                    <div class="linha"></div>
+                    <div id="linha"></div>
                     <p>Lorem, ipsum dolor sit amet consectetur <br>adipisicing elit. Illum, rerum quaerat. <br> Aperiam fugiat odit even</p>
                 </div>
                 <div class="conteiner_servico">
                     <p>Serviço</p>
-                    <div class="linha"></div>
+                    <div id="linha"></div>
                     <p>Lorem ipsum, dolor sit amet <br> consectetur </p>
                 </div>
             </div>
         </section>
         
         <section class="secao" id="secao2">
-            <div>
-                <h2 class="h2_secao">Tecnologia:</h2>
+            <div class="text_h2">
+                <h2 class="h2_tecnologia">Tecnologia:</h2>
             </div>
             <div class="tecnologias_utilizo">
                 <div class="tecnologia" id="js">
                     <i class="fa-brands fa-js"></i>
                     <h2>JavaScript</h2>
-                    <p>Este projeto utiliza JavaScript para criar experiências interativas nas páginas web. Sua versatilidade, tanto no lado do cliente quanto do servidor, o torna uma escolha poderosa para aplicações modernas.</p>
+                    <p>Este projeto utiliza JavaScript para criar experiências interativas nas páginas web. </p>
                     <a href="">Projeto com essa tecnologia<i class="fa-solid fa-arrow-right"></i></a>
                 </div>
-                <div id="linhaH"></div>
+                <div class="linhaH"></div>
                 <div class="tecnologia" id="node">
                     <i class="fa-brands fa-node"></i>
                     <h2>Node</h2>
-                    <p>Node.js é a base deste projeto, oferecendo eficiência e capacidade para lidar com múltiplas conexões simultâneas. Sua agilidade torna-o ideal para aplicações escaláveis em tempo real.</p>
+                    <p>Node.js é a base deste projeto, oferecendo eficiência e capacidade para lidar com múltiplas conexões simultâneas.</p>
                     <a href="">Projeto com essa tecnologia<i class="fa-solid fa-arrow-right"></i></a>
                 </div>
-                <div id="linhaH"></div>
+                <div class="linhaH"></div>
                 <div class="tecnologia" id="react">
                     <i class="fa-brands fa-react"></i>
                     <h2>JavaScript</h2>
-                    <p>Neste projeto, React é a estrela principal. Esta biblioteca JavaScript é amplamente reconhecida pela construção eficiente de interfaces de usuário interativas. Com componentes reutilizáveis, React simplifica o desenvolvimento, proporcionando uma experiência de usuário fluida e responsiva.</p>
+                    <p>Neste projeto, React é a estrela principal. Esta biblioteca JavaScript é amplamente reconhecida pela construção eficiente de interfaces de usuário interativas.</p>
                     <a href="">Projeto com essa tecnologia<i class="fa-solid fa-arrow-right"></i></a>
                 </div>
             </div>
         </section>
     
-        <section class="secao" id="secao3">
+        <!-- <section class="secao" id="secao3">
             <div>
                 <h2 class="h2_secao">Projetos</h2>
             </div>
@@ -121,7 +130,7 @@
                     <a href="https://caiofcsousa.github.io/Snake_game/" target="_blank"><img src="img/prjeto_snekeGame.png" alt="Projeto Snake Game"></a>
                 </div>
             </div>
-        </section>
+        </section> -->
     
         <footer class="rodape" id="entra_contado">
             <h1>Seção 4</h1>
