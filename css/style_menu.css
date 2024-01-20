@@ -83,6 +83,7 @@
 .temas{
     position: absolute;
     top: 30px;
+    right: 50px;
     font-size: 1.7em;
 }
 @media (width < 830px) {
@@ -99,6 +100,13 @@
         z-index: 9999;
         transition: ease 0.3s;
     }
+    .temas {
+        position: absolute;
+        right: 60px;
+        font-size: 1.7em;
+        top: 80px;
+    }
+    
     .menu{
         display: none;
     }
