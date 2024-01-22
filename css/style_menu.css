@@ -1,30 +1,28 @@
 :root{
-    --cor-bg:#0a0a0a;
-    --cor-text-tm-preto:#ffff;
-    --cor-text-tm-branco:#191919;
-    --cor-hover:#eed33b;
-
+    --cor-bg-sidebar-tm-preto:#0d0d0d;
+    --cor-bg-sidebar-tm-branco:#8a8a8a;
+    --cor-amarela:#ffd900;
 }
 .sidebar{
     display: flex;
     flex-direction: column;
     justify-content: space-around;
     position: fixed;
-    background-color: var(--cor-bg);
+    background-color: var(--cor-bg-sidebar-tm-preto);
     align-items: center;
     width:170px;
     height: 100%;
-    box-shadow: #000000 10px 10px 20px;
+    box-shadow: #00000099 1px 1px 20px;
     z-index: 9999;
     transition: ease 0.3s;
 }
 .sidebar a{
-    color: var(--cor-text-tm-preto);
+    color: #ffffff;
     text-decoration: none;
     transition: ease 0.3s;
 }
 .sidebar a:hover,.sidebar i:hover{
-    color: var(--cor-hover);
+    color: var(--cor-amarela);
     transition: ease 0.3s;
 }
 
@@ -50,24 +48,10 @@
     padding-left: 5px;
 }
 .menu li:hover{
-    border-left: 1px solid var(--cor-text-tm-preto);
+    border-left: 1px solid #ffffff;
     
 }
-.redes{
-    display: flex;
-    gap: 15px;
-    align-items: center;
-    font-size: 1.3em;
-    transition: ease 0.3s;
-}
-.redes i,.redes a{
-    transition: ease 0.3s;
-}
-.redes i:hover{
-    cursor: pointer;
-    transition: ease 0.3s;
-    transform: scale(1.1);
-}
+
 .temas .sol{
     display: none;
 }
@@ -77,7 +61,7 @@
 }
 .temas i:hover{
     cursor: pointer;
-    color: var(--cor-hover);
+    color: var(--cor-amarela);
     transition: ease 0.3s;
 }
 .temas{
@@ -86,17 +70,15 @@
     right: 50px;
     font-size: 1.7em;
 }
-@media (width < 830px) {
+@media (width < 926px) {
     .sidebar{
         display: flex;
         flex-direction: row;
         justify-content: space-around;
         position: fixed;
-        background-color: var(--cor-bg);
         align-items: center;
         width:100%;
         height: 50px;
-        box-shadow: #000000 10px 10px 20px;
         z-index: 9999;
         transition: ease 0.3s;
     }
@@ -106,13 +88,11 @@
         font-size: 1.7em;
         top: 80px;
     }
-    
     .menu{
         display: none;
     }
     .icone_menu{
         display: block;
     }
-    
 }
 

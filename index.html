@@ -8,13 +8,14 @@
     <link rel="stylesheet" href="./css/style_menu.css">
     <link rel="stylesheet" href="./css/style_midia.css">
     <script src="./js/script.js" defer></script>
+    <script src="./js/mudar_cor.js" defer></script>
     <script src="https://kit.fontawesome.com/f0a585b64c.js" crossorigin="anonymous"></script>
 </head>
 <body> 
     <aside class="sidebar">
         <header class="header-logo">
             <img class="image-logo" src="img/1f913.gif" alt="caio">
-            <p>Caio</p>
+            <p style="color:#ffff;">Caio</p>
         </header>
         <nav class="menu">
             <ul>
@@ -24,11 +25,7 @@
                 <li><a href="#entra_contado">Contate-me</a></li>
             </ul>
         </nav>    
-        <div class="redes">
-            <a href="https://github.com/CaioFCSousa" target="_blank"><i class="fa-brands fa-github"></i></a>
-            <a href="https://www.linkedin.com/in/caio-fernando-29ba34287/"  target="_blank"><i class="fa-brands fa-linkedin"></i></a>
-
-        </div>
+       
         <div class="icone_menu">
             <i class="fa-solid fa-bars"></i>
         </div>
@@ -43,22 +40,30 @@
         <section class="secao" id="secao1">
             <div class="conteine_aprese">
                 <div class="apresentacao">
-                    <h2>I'm</h2>
-                    <h1>Caio<br>Fernando</h1>
-                    <div id="linha"></div>
-                    <p>Lorem, ipsum dolor sit amet consectetur <br>adipisicing elit. Illum, rerum quaerat. <br> Aperiam fugiat odit even</p>
+                    <div class="apresentacao_txt">
+                        <h2>I'm</h2>
+                        <h1>Caio<br>Fernando</h1>
+                        <div id="linha"></div>
+                        <p>Lorem, ipsum dolor sit amet consectetur <br>adipisicing elit. Illum, rerum quaerat. <br> Aperiam fugiat odit even</p>
+                    </div>
+                    <div class="redes">
+                        <a href="https://github.com/CaioFCSousa" target="_blank"><p></p><i class="fa-brands fa-github"></i>github</a>
+                        <a href="https://www.linkedin.com/in/caio-fernando-29ba34287/"  target="_blank"><i class="fa-brands fa-linkedin"></i>linkedin</a> 
+                    </div>
                 </div>
                 <div class="conteiner_servico">
-                    <p>Serviço</p>
+                    <p style="font-weight:800;">Serviço</p>
                     <div id="linha"></div>
                     <p>Lorem ipsum, dolor sit amet <br> consectetur </p>
                 </div>
+              
+                
             </div>
         </section>
         
         <section class="secao" id="secao2">
             <div class="text_h2">
-                <h2 class="h2_tecnologia">Tecnologia:</h2>
+                <h2 class="h2_sobre">Tecnologia:</h2>
             </div>
             <div class="tecnologias_utilizo">
                 <div class="tecnologia" id="js">
@@ -84,9 +89,9 @@
             </div>
         </section>
     
-        <!-- <section class="secao" id="secao3">
-            <div>
-                <h2 class="h2_secao">Projetos</h2>
+        <section class="secao" id="secao3">
+            <div class="text_h2">
+                <h2 class="h2_sobre">Projetos</h2>
             </div>
             <div class="projetos">
                 <div class="pj">
@@ -95,45 +100,49 @@
                             <p class="type_pj">Projeto JavaScript</p>
                             <p class="name_pj">Snake Game</p>
                         </div>
+                 
                         <a href="https://github.com/CaioFCSousa/Snake_game" target="_blank"><i class="fa-brands fa-github"></i> Código</a>
-                    </div>
+                    </div> 
                     <a href="https://caiofcsousa.github.io/Snake_game/" target="_blank"><img src="img/prjeto_snekeGame.png" alt="Projeto Snake Game"></a>
                 </div>
                 <div class="pj">
                     <div class="aria_projeto">
                         <div class="sobre_projeto">
                             <p class="type_pj">Projeto JavaScript</p>
-                            <p class="name_pj">Snake Game</p>
+                            <p class="name_pj">Calculadora IMC</p>
                         </div>
-                        <a href="https://github.com/CaioFCSousa/Snake_game" target="_blank"><i class="fa-brands fa-github"></i> Código</a>
-                    </div>
-                    <a href="https://caiofcsousa.github.io/Snake_game/" target="_blank"><img src="img/prjeto_snekeGame.png" alt="Projeto Snake Game"></a>
+                        <a href="https://github.com/CaioFCSousa/Calculadora_IMC" target="_blank"><i class="fa-brands fa-github"></i> Código</a>
+                    </div> 
+                    <a href="https://caiofcsousa.github.io/Calculadora_IMC/" target="_blank"><img src="img/Calculadora_IMC.png" alt="Projeto Snake Game"></a>
                 </div>
                 <div class="pj">
                     <div class="aria_projeto">
                         <div class="sobre_projeto">
                             <p class="type_pj">Projeto JavaScript</p>
-                            <p class="name_pj">Snake Game</p>
+                            <p class="name_pj">To Do List</p>
                         </div>
-                        <a href="https://github.com/CaioFCSousa/Snake_game" target="_blank"><i class="fa-brands fa-github"></i> Código</a>
-                    </div>
-                    <a href="https://caiofcsousa.github.io/Snake_game/" target="_blank"><img src="img/prjeto_snekeGame.png" alt="Projeto Snake Game"></a>
+                        <a href="https://github.com/CaioFCSousa/To_do_list" target="_blank"><i class="fa-brands fa-github"></i> Código</a>
+                    </div> 
+                    <a href="https://caiofcsousa.github.io/To_do_list/" target="_blank"><img src="img/to_do_list.png" alt="to do list"></a>
                 </div>
                 <div class="pj">
                     <div class="aria_projeto">
                         <div class="sobre_projeto">
-                            <p class="type_pj">Projeto JavaScript</p>
-                            <p class="name_pj">Snake Game</p>
+                            <p class="type_pj">Projeto React</p>
+                            <p class="name_pj">Pronturario</p>
                         </div>
-                        <a href="https://github.com/CaioFCSousa/Snake_game" target="_blank"><i class="fa-brands fa-github"></i> Código</a>
-                    </div>
-                    <a href="https://caiofcsousa.github.io/Snake_game/" target="_blank"><img src="img/prjeto_snekeGame.png" alt="Projeto Snake Game"></a>
+                 
+                        <a href="https://github.com/CaioFCSousa/Repositorio_ltd" target="_blank"><i class="fa-brands fa-github"></i> Código</a>
+                    </div> 
+                    <a href="https://github.com/CaioFCSousa/Repositorio_ltd" target="_blank"><img src="img/projeto_ltd.jpeg" alt="Projeto Pronturari"></a>
                 </div>
             </div>
-        </section> -->
+        </section>
     
         <footer class="rodape" id="entra_contado">
-            <h1>Seção 4</h1>
+            <div class="text_h2">
+                <h2 class="h2_sobre">Contate-me</h2>
+            </div>
         </footer>
     </div>
 
