@@ -1,48 +1,42 @@
-const lua = document.querySelector('.temas .lua')
-const sol = document.querySelector('.temas .sol')
-const sidebar = document.querySelector(".sidebar")
-const aria_projeto = document.querySelectorAll(".aria_projeto")
-const tecnologia = document.querySelector(".tecnologia a")
-const pj = document.querySelectorAll(".pj")
-const name_pj = document.querySelectorAll(".name_pj")
-const aria_projetoA = document.querySelectorAll(".aria_projeto a")
+const elementos = document.querySelectorAll("*")
 
-console.log(aria_projeto)
-lua.addEventListener("click",(evt)=>{
+const sol = document.querySelector(".sol")
+const lua = document.querySelector(".lua")
+
+sol.addEventListener("click",()=>{
+    blackMode()
+    sol.style.display = "none"
+    lua.style.display = "block"
+    
+})
+lua.addEventListener("click",()=>{
+    whiteMode()
+    lua.style.display = "none"
+    sol.style.display = "block"
+   
+})
+
+
+function  whiteMode(){
+    
     document.body.style.backgroundColor = "var(--cor-bg-tm-branco)"
     document.body.style.color = "var(--cor-txt-tm-branco)"
-    sidebar.style.backgroundColor = "var(--cor-bg-sidebar-tm-branco)"
-    aria_projeto.forEach((el)=>{
-        el.style.backgroundColor = "var(--cor-bg-ariaProjeto-branco)"
+    document.querySelectorAll(".type_pj").forEach((el)=>{
+        el.style.color = "var(--cor-txt-tm-preto)"
     })
-    name_pj.forEach((el)=>{
-        el.style.color = "#000000"
+    document.querySelectorAll(".redes").forEach((el)=>{
+        el.style.color = "var(--cor-txt-tm-branco)"
+        el.style.borderColor = "var(--cor-txt-tm-branco)"
     })
-    aria_projetoA.forEach((el)=>{
-        el.style.color = "#000000"
-    })
-
-
-    lua.style.display = "none"
-    sol.style.display = 'block'
-
-})
-sol.addEventListener("click",(evt)=>{
+   
+}
+function blackMode(){
     document.body.style.backgroundColor = "var(--cor-bg-tm-preto)"
     document.body.style.color = "var(--cor-txt-tm-preto)"
-    sidebar.style.backgroundColor = "var(--cor-bg-sidebar-tm-preto)"
-    aria_projeto.forEach((el)=>{
-        el.style.backgroundColor = "var(--cor-bg-ariaProjeto-preto)"
+    document.querySelectorAll(".redes").forEach((el)=>{
+        el.style.color = "var(--cor-txt-tm-preto)"
+        el.style.borderColor = "var(--cor-txt-tm-preto)"
     })
-    name_pj.forEach((el)=>{
-        el.style.color = "#eed33b"
-    })
-    aria_projetoA.forEach((el)=>{
-        el.style.color = "#eed33b"
-    })
-    lua.style.display = "block"
-    sol.style.display = 'none'
-})
+    
 
-
-
+}

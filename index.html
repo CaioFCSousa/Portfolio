@@ -7,12 +7,14 @@
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./css/style_menu.css">
     <link rel="stylesheet" href="./css/style_midia.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
     <script src="./js/script.js" defer></script>
     <script src="./js/mudar_cor.js" defer></script>
     <script src="./js/menu_laterea_celular.js" defer></script>
     <script src="https://kit.fontawesome.com/f0a585b64c.js" crossorigin="anonymous"></script>
 </head>
 <body> 
+   
     <aside class="sidebar">
         <header class="header-logo">
             <img class="image-logo" src="img/1f913.gif" alt="caio">
@@ -27,19 +29,18 @@
             </ul>
         </nav>    
         <div class="icone_menu">
-            <i class="fa-solid fa-bars"></i>
+            <i class="fa-solid fa-bars menu"></i>
         </div>
+        <nav class="menu_celular">
+            <span class="material-symbols-outlined fechar">close</span>
+            <ul>
+                <li><a href="#secao1">Home</a></li>
+                <li><a href="#secao2">Tecnologias</a></li>
+                <li><a href="#secao3">Projetos</a></li>
+                <li><a href="#entra_contado">Contate-me</a></li>
+            </ul>
+        </nav>  
     </aside>
-    <nav class="menu_celular">
-        <i class="fa-solid fa-x"></i>
-        <ul>
-            <li><a href="#secao1">Home</a></li>
-            <li><a href="#secao2">Tecnologias</a></li>
-            <li><a href="#secao3">Projetos</a></li>
-            <li><a href="#entra_contado">Contate-me</a></li>
-        </ul>
-    </nav>   
-
     <div class="conteiner">
         <div class="temas">
             <i class="fa-solid fa-moon lua"></i>
@@ -64,8 +65,8 @@
                 
             </div>
             <div class="redes">
-                <a href="https://github.com/CaioFCSousa" target="_blank"><p></p><i class="fa-brands fa-github"></i>github</a>
-                <a href="https://www.linkedin.com/in/caio-fernando-29ba34287/"  target="_blank"><i class="fa-brands fa-linkedin"></i>linkedin</a> 
+                <a class="redes" href="https://github.com/CaioFCSousa" target="_blank"><p></p><i class="fa-brands fa-github redes"></i>github</a>
+                <a class="redes" href="https://www.linkedin.com/in/caio-fernando-29ba34287/"  target="_blank"><i class="fa-brands fa-linkedin redes"></i>linkedin</a> 
             </div>
         </section>
         
@@ -109,9 +110,9 @@
                             <p class="name_pj">Snake Game</p>
                         </div>
                  
-                        <a href="https://github.com/CaioFCSousa/Snake_game" target="_blank"><i class="fa-brands fa-github"></i> Código</a>
+                        <a class="link_codigo" href="https://github.com/CaioFCSousa/Snake_game" target="_blank"><i class="fa-brands fa-github"></i> Código</a>
                     </div> 
-                    <a href="https://caiofcsousa.github.io/Snake_game/" target="_blank"><img src="img/prjeto_snekeGame.png" alt="Projeto Snake Game"></a>
+                    <a  href="https://caiofcsousa.github.io/Snake_game/" target="_blank"><img src="img/prjeto_snekeGame.png" alt="Projeto Snake Game"></a>
                 </div>
                 <div class="pj">
                     <div class="aria_projeto">
@@ -119,7 +120,7 @@
                             <p class="type_pj">Projeto JavaScript</p>
                             <p class="name_pj">Calculadora IMC</p>
                         </div>
-                        <a href="https://github.com/CaioFCSousa/Calculadora_IMC" target="_blank"><i class="fa-brands fa-github"></i> Código</a>
+                        <a class="link_codigo" href="https://github.com/CaioFCSousa/Calculadora_IMC" target="_blank"><i class="fa-brands fa-github"></i> Código</a>
                     </div> 
                     <a href="https://caiofcsousa.github.io/Calculadora_IMC/" target="_blank"><img src="img/Calculadora_IMC.png" alt="Projeto Snake Game"></a>
                 </div>
@@ -129,7 +130,7 @@
                             <p class="type_pj">Projeto JavaScript</p>
                             <p class="name_pj">To Do List</p>
                         </div>
-                        <a href="https://github.com/CaioFCSousa/To_do_list" target="_blank"><i class="fa-brands fa-github"></i> Código</a>
+                        <a class="link_codigo" href="https://github.com/CaioFCSousa/To_do_list" target="_blank"><i class="fa-brands fa-github"></i> Código</a>
                     </div> 
                     <a href="https://caiofcsousa.github.io/To_do_list/" target="_blank"><img src="img/to_do_list.png" alt="to do list"></a>
                 </div>
@@ -139,8 +140,7 @@
                             <p class="type_pj">Projeto React</p>
                             <p class="name_pj">Pronturario</p>
                         </div>
-                 
-                        <a href="https://github.com/CaioFCSousa/Repositorio_ltd" target="_blank"><i class="fa-brands fa-github"></i> Código</a>
+                        <a class="link_codigo" href="https://github.com/CaioFCSousa/Repositorio_ltd" target="_blank"><i class="fa-brands fa-github"></i> Código</a>
                     </div> 
                     <a href="https://github.com/CaioFCSousa/Repositorio_ltd" target="_blank"><img src="img/projeto_ltd.jpeg" alt="Projeto Pronturari"></a>
                 </div>
