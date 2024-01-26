@@ -84,6 +84,9 @@
 .menu_celular{
     display: none;
 }
+.icone_menu i{
+    display:none;
+}
 @media (width>926) {
     .icone_menu i{
         display: none;

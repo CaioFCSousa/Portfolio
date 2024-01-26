@@ -5,6 +5,7 @@ const estilo = document.querySelector(".estilo")
 document.addEventListener("click",(evt)=>{
     if(evt.target.className === "fa-solid fa-bars menu"){
         menu_celular.style.right = "0px"
+        menu.style.display = "none"
         
     }
     if(evt.target.className === "material-symbols-outlined fechar"){
